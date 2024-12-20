@@ -1,7 +1,7 @@
 // utils/trpc.ts
 import { createTRPCReact } from '@trpc/react-query';
 import { httpBatchLink } from '@trpc/client';
-import type { AppRouter } from '../../../backend/server'; // Ensure this path is correct
+import type { AppRouter } from '../../backend/appRouter'; // Adjust if needed
 
 // Create TRPC hooks for your frontend
 const trpc = createTRPCReact<AppRouter>();
