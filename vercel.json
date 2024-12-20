@@ -2,8 +2,14 @@
     "version": 2,
     "builds": [
       {
-        "src": "build/**/*",
-        "use": "@vercel/static"
+        "src": "frontend/frontend/src/pages/index.tsx",
+        "use": "@vercel/next"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "frontend/frontend/src/pages/$1"
       }
     ]
   }
